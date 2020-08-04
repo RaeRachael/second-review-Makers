@@ -15,4 +15,9 @@ describe "#filter_pass" do
       expect(filter_pass([1001])).to eq ([1000])
     end
   end
+  describe 'can deal with more than one elemnet' do
+    it "should return '[40, 56]' for '[1, 56]'" do
+      expect(filter_pass([1, 56])).to eq ([40, 56])
+    end
+  end
 end

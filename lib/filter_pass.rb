@@ -1,10 +1,14 @@
 
 def filter_pass(array)
-  if array[0] < 40
-    return [40]
+  output = []
+  array.each do |freq|
+    if freq < 40
+      output << 40
+    elsif freq > 1000
+      output << 1000
+    else
+      output << freq
+    end
   end
-  if array[0] > 1000
-    return [1000]
-  end
-  array
+  output
 end
