@@ -20,4 +20,9 @@ using defaults
 
 [1], 5464, 2 - [2]
 
+["a"] - error - "data corrupted"
+
+[5], "a", 4
+[5, 4, "a]
+
 filter_pass([])

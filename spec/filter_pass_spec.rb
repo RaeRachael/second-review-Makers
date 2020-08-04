@@ -39,5 +39,8 @@ describe "#filter_pass" do
     it "should raise error - 'data corrupted' if frequencies contain a non-number" do
       expect{ filter_pass(["a"]) }.to raise_error("data corrupted")
     end
+    it "should raise error - 'filters need to be numbers' if filters contain a non-number" do
+      expect{ filter_pass([5], "a", 4) }.to raise_error("filters need to be numbers")
+    end
   end
 end
