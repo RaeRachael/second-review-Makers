@@ -42,5 +42,8 @@ describe "#filter_pass" do
     it "should raise error - 'filters need to be numbers' if filters contain a non-number" do
       expect{ filter_pass([5], "a", 4) }.to raise_error("filters need to be numbers")
     end
+    it "should raise error - 'filters need to be numbers' if filters contain a non-number" do
+      expect{ filter_pass([5], 4, "a") }.to raise_error("filters need to be numbers")
+    end
   end
 end
