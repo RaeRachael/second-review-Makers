@@ -35,4 +35,9 @@ describe "#filter_pass" do
       end
     end
   end
+  context "edge cases" do
+    it "should raise error - 'data corrupted' if frequencies contain a non-number" do
+      expect{ filter_pass(["a"]) }.to raise_error("data corrupted")
+    end
+  end
 end
