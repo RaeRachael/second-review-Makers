@@ -1,9 +1,9 @@
 
-def filter_pass(frequencies)
+def filter_pass(frequencies, top = 1000, bottom = 40)
   output = []
   frequencies.each do |frequency|
-    if frequency < 40
-      output << 40
+    if frequency < bottom
+      output << bottom
     elsif frequency > 1000
       output << 1000
     else

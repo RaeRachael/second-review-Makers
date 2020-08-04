@@ -8,10 +8,16 @@ band-pass
 
 [3, 4, 6, 6]
 
-raise error if [NaN]
+raise error if [NaN], or [], NaN
 
 using defaults
 
 [56] - [56]
 [1] - [40]
 [10001] - [1000]
+
+[1, 56] - [40, 56]
+
+[1], 5464, 2 - [2]
+
+filter_pass([])
