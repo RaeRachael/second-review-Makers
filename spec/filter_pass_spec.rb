@@ -29,5 +29,10 @@ describe "#filter_pass" do
         expect(filter_pass([1], 1000, 2)).to eq ([2])
       end
     end
+    describe "upper filter" do
+      it "should use the upper filter value given" do
+        expect(filter_pass([2001], 2000, 40)).to eq ([2000])
+      end
+    end
   end
 end
