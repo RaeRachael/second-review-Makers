@@ -1,4 +1,4 @@
 
 def filter_pass(array)
-  [56]
+  array
 end
