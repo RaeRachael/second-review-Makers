@@ -11,5 +11,8 @@ describe "#filter_pass" do
     it "should make freq min value, 40, if less than 40" do
       expect(filter_pass([1])).to eq ([40])
     end
+    it "should make freq max value, 1000, if more than 1000" do
+      expect(filter_pass([1001])).to eq ([1000])
+    end
   end
 end
