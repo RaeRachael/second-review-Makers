@@ -1,4 +1,3 @@
-
 def filter_pass(frequencies, top = 1000, bottom = 40)
   raise "filters need to be numbers" unless top.is_a?(Numeric) && bottom.is_a?(Numeric)
   output = []
